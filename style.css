@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243e63;
+    font-style: lowercase;
 }
 
 body {
@@ -364,4 +365,33 @@ QUALITY SECTION
     z-index: 0;
     display: block;
 }
+
+/* 
+
+STEPS
+
+*/
+
+#steps .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps__img--wrapper {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.steps__img {
+    z-index: 2;
+}
+
+.steps__description {
+    padding: 32px 0;
+    padding-left: 64px;
+}
+
+
 
