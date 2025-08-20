@@ -9,10 +9,6 @@
     font-style: lowercase;
 }
 
-div {
-    unicode-bidi: isolate;
-}
-
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -565,12 +561,42 @@ PRICING
     rgb(129, 230, 217) 100%);
 }
 
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, 
+    rgb(76, 81, 191) 0%, 
+    rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(3) 
+.plan__stripe, 
+.plan:nth-child(3) 
+.plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, 
+    rgb(245, 101, 101) 0%, 
+    rgb(254, 178, 178) 100%);
+}
+
+.plan:nth-child(2) 
+.plan__name, 
+.plan:nth-child(2) 
+.plan__price, 
+.plan:nth-child(2) 
+.plan__target, 
+.plan:nth-child(2) 
+.plan__duration, 
+.plan:nth-child(2) 
+.plan__feature {
+    color: #f7fafc;
+}
+
+
 .plan__stripe {
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
-    height: o.5rem;
+    height: 0.5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
@@ -624,6 +650,11 @@ PRICING
     padding: 32px;
 }
 
+.plan__middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
 .plan__target {
     font-size: 20px;
     font-weight: 700;
@@ -659,9 +690,16 @@ PRICING
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border: none;
+    cursor: pointer;
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
 }
 
 
-.plan:nth-child(2) {
-    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
-    }
+
+
+
+
